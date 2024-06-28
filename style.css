@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Matter';
+  src: url('./font/Matter-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Matter Bold';
+  src: url('./font/Matter-Bold.ttf') format('truetype');
+}
+
+strong {
+  font-family: 'Matter Bold', sans-serif !important;
+}
+
+body {
+  font-family: 'Matter', sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-custom {
     padding-right: 50px;
     padding-left: 50px;
@@ -48,20 +69,19 @@
 
   .quote-container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 32px;
     margin: 100px;
+    padding: 50px;
   }
 
   /* Cards */
   .card {
-    border: none; /* Remove default border */
-    padding: 20px; /* Add padding to the card */
-    border-radius: 10px; /* Rounded corners */
-    margin: 10px;
+    border: none; 
+    padding: 20px; 
+    border-radius: 10px; 
   }
   .card-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
   .card-subtitle {
@@ -69,6 +89,7 @@
   }
   .learn-more-btn {
     color: #000000;
+    font-weight: 700;
   }
   .learn-more-btn:hover {
     color: #000000;
@@ -100,12 +121,6 @@
     text-align: center;
     margin-bottom: 30px;
   }
-  .focus-card {
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    color: white !important; /* Text color */
-  }
   .card-01 {
     background-color: #303030;
   }
@@ -125,14 +140,14 @@
     text-align: center;
 }
 .section-title {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
     font-weight: 400;
 }
 .section-subtitle {
-    color: #4E4E4E;
+    color: #4E4E4E !important;
     margin: 20px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem !important;
 }
   .concept-card {
     border-radius: 10px;
@@ -144,13 +159,13 @@
   /* Service card  */
   .service-card {
     background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 10px;
     height: 100%;
     text-align: center;
   }
   .service-card p {
-    margin: 10px;
+    margin: 16px;
   }
 .font-56 {
     font-size: 2.5rem;
@@ -159,6 +174,7 @@
     color: #000000;
     padding: 14px;
     border: 1px solid #212121;
+    cursor: pointer;
   }
 
  /* logo card  */
@@ -214,38 +230,11 @@
     background-color: #000000;
     color: #fff;
   }
-
-  .featured-card {
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    display: flex;
-    background-color: #fff;
-  }
-  .featured-image {
-    flex: 0 0 50%; /* 50% width for the image */
-    position: relative;
-  }
-  .featured-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .featured-content {
-    flex: 0 0 50%; /* 50% width for the content */
-    padding: 20px;
-  }
   .card-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 10px;
-  }
- 
-  .card-subtitle img {
-    max-width: 100%;
-    height: auto;
   }
 
   .cta-buttons {
@@ -254,7 +243,7 @@
     justify-content: center; 
   }
   .btn-outline-dark {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-color: #343a40;
     color: #343a40;
     transition: all 0.3s;
@@ -266,7 +255,7 @@
     background-color: #fff;
   }
   .btn-black {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background-color: #000;
     color: #fff;
     transition: all 0.3s;
@@ -354,3 +343,16 @@
   a {
     text-decoration: none;
   }
+  .card-custom {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-custom {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 10px 25px;
+  }
+
